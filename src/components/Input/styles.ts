@@ -25,13 +25,6 @@ export const Container = styled.div<ContainerProps>`
   }
 
   ${props =>
-    props.isErrored &&
-    css`
-      border-color: #c53030;
-      color: #c53030;
-    `}
-
-  ${props =>
     props.isFilled &&
     css`
       color: #ff9000;
@@ -44,6 +37,12 @@ export const Container = styled.div<ContainerProps>`
       border-color: #ff9000;
     `}
 
+    ${props =>
+    props.isErrored &&
+    css`
+      border-color: #c53030;
+      color: #c53030;
+    `}
 
   input {
     color: #f4ede8;
