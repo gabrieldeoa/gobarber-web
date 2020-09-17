@@ -5,8 +5,8 @@ import SignIn from './pages/SignIn';
 import GlobalStyle from './styles/global';
 
 import ToastContainer from './components/ToastContainer';
-import { AuthProvider } from './hooks/AuthContext';
-import { ToastProvider } from './hooks/ToastContext';
+import { AuthProvider } from './hooks/auth';
+import { ToastProvider } from './hooks/toast';
 
 const App: React.FC = () => (
   <>
